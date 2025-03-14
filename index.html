@@ -26,6 +26,7 @@
       <div id="culqi-container"></div>
     </div>
     <button class="bg-purple-400 hover:bg- text-white hover:text-red-500 py-2 px-3 rounded-lg" id="btn-open">open modal</button>
+	<div id="response"></div>
   </div>
   <script>	
 
@@ -533,16 +534,20 @@
 	Culqi.initCheckout();
 
 	const handleCulqiAction = () => {
+		let response = document.getElementById('response'); 
 	  if (Culqi.token) {
 		const token = Culqi.token.id;
+		response.innerHTML = `${token}`
 		console.log("Se ha creado un Token: ", token);
 		console.log("Se ha creado un metadata: ", Culqi.token.metadata);
 		console.log("Se ha creado un metadata dni: ", Culqi.token.metadata.dni);
 	  } else if (Culqi.order) {
 		const order = Culqi.order;
+		response.innerHTML = `${order}`
 		console.log("Se ha creado el objeto Order: ", order);
 	  } else {
 		console.log("Errorrr : ", Culqi.error);
+		response.innerHTML = `${JSON.stringify(Culqi.error)}`
 	  }
 	};
 
