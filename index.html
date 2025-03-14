@@ -106,50 +106,50 @@
 	
 	const customFields = {
 		customInput: [
-		// {
-		// 		type: "checkbox", // optional
-		// 		id: "solio",
-		// 		doubleSpan: true,
-		// 		required: true,
-		// 		label: "Deseo recibir ofertas de la tienda? puedes ver las ofertas {link1} y {link2}",
-		// 		links: {
-		// 		  link1: {
-		// 			text: "aquí",
-		// 			url: "https://www.google.com",
-		// 		  },
-		// 		  link2: {
-		// 			text: "aquí",
-		// 			url: "https://www.google.com",
-		// 		  },
-		// 		},
-		// 	},
-		// 	{
-		// 	  label: "DNI",
-		// 	  // type: "number", // optional
-		// 	  typeValidate: "DNI",
-		// 	  placeholder: "Dni",
-		// 	  // regex: "/^[a-zA-Z]+$/", // optional
-		// 	  id: "dni", // lowercase, only letter
-		// 	  minLength: 7,
-		// 	  maxLength: 20,
-		// 	  doubleSpan: true,
-		// 	},
+		{
+				type: "checkbox", // optional
+				id: "solio",
+				doubleSpan: true,
+				required: true,
+				label: "Deseo recibir ofertas de la tienda? puedes ver las ofertas {link1} y {link2}",
+				links: {
+				  link1: {
+					text: "aquí",
+					url: "https://www.google.com",
+				  },
+				  link2: {
+					text: "aquí",
+					url: "https://www.google.com",
+				  },
+				},
+			},
+			{
+			  label: "DNI",
+			  // type: "number", // optional
+			  typeValidate: "DNI",
+			  placeholder: "Dni",
+			  // regex: "/^[a-zA-Z]+$/", // optional
+			  id: "dni", // lowercase, only letter
+			  minLength: 7,
+			  maxLength: 20,
+			  doubleSpan: true,
+			},
 
-			// {
-			// 	type: "paragraph",
-			// 	text: "Mira {link1} para más {link2}.",
-			// 	align: "center",
-			// 	links: {
-			// 	  link1: {
-			// 		text: "aquí",
-			// 		url: "https://www.google.com",
-			// 	  },
-			// 	  link2: {
-			// 		text: "información",
-			// 		url: "https://www.youtube.com",
-			// 	  },
-			// 	},
-			// },
+			{
+				type: "paragraph",
+				text: "Mira {link1} para más {link2}.",
+				align: "center",
+				links: {
+				  link1: {
+					text: "aquí",
+					url: "https://www.google.com",
+				  },
+				  link2: {
+					text: "información",
+					url: "https://www.youtube.com",
+				  },
+				},
+			},
 
 			// {
 			// 	type: "paragraph",
@@ -277,8 +277,8 @@
 	  //loadPaymentBydefault: false,
 	  paymentMethods: paymentMethods,
 	  paymentMethodsSort: Object.keys(paymentMethods),
-	  inputCustoms,
-	//   customFields,
+	//   inputCustoms,
+	  customFields,
 	  /*paymentMethodsSort: [
             "cuotealo",
             "yape",
